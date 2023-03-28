@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> BOOK MY HOTEL </title>
+    <link rel="icon" href="hotel-solid.svg">
+</head>
+    <style>
+        *{
+            margin: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            
+        }
+        div.navbar{
+            position: fixed;
+            width: 100%;
+            top:0;
+            background-color: rgb(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px); 
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.427);
+
+        }
+        ul{
+           
+            /* background-color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px); */
+            /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.427); */
+
+            
+        }
+        li{
+            float: left; 
+            
+
+            margin-left: 20px;
+            margin: 5px;
+            padding: 15px;
+        }
+        ul li a{
+            list-style-type: none;
+            text-decoration: none;
+            
+            font-size: 20px;
+            color: whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        ul li:hover{
+            background-color: rgba(128, 128, 128, 0.204);
+            border-radius: 10px;
+        }
+
+        .book-head{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+        .book-head h1{
+            color: red;
+            background-color: blanchedalmond;
+            padding: 25px;
+            
+        }
+        form{
+            text-align: center;
+            background-color: cornsilk;
+        }
+        form div{
+            margin: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form div input{
+            font-size: 16px;
+            
+        }
+
+        form div button{
+            width: 200px;
+            font-weight: bold;
+            font-size: 16px;
+            color: rgb(158, 0, 0);
+            background-color: rgb(255, 204, 142);
+            border: none;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .footer{
+                background-color: skyblue;
+                background-color: rgb(254, 229, 197);
+                
+        }
+        .footer .container-1{
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            
+        }
+
+    </style>
+
+<body>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" style="color: violet;"> HOME </a></li>
+                <li><a href="gallery.html"> GALLERY </a></li>
+                <li><a href="aboutus.html"> ABOUT US </a></li>
+                <li><a href="contactus.html"> CONTACT US </a></li>
+                <img src="logo.png" alt="" style="width: 100px; height:65px; float: right; margin-right: 25px;">
+            </ul>
+        </div>
+
+        <div class="banner">
+            <img src="car2.jpg" alt="img" width="1350px" height="675px">
+        </div>
+
+        <div class="book-head">
+            <h1> BOOK NOW </h1>
+        </div>
+
+        <div class="booking">
+            <form action="">
+
+                <div>
+                    <label for=""> NAME :- </label>
+                    <input type="text" placeholder="ENTER YOUR NAME" required>
+                    
+                </div>
+
+                <div>
+                    <label for="">MOBILE NUMBER :- </label>
+                    <input type="text" placeholder="ENTER YOUR MO.number" required>
+                </div>
+
+                <div>
+                    <label for="">ENTER LOCATION YOU WANT TO BOOK :- </label>
+                    <select name="" id="" required>
+                        <option value=""> PUNE </option>
+                        <option value=""> MUMBAI </option>
+                        <option value=""> NASHIK </option>
+                        <option value=""> GOA </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">ARRIVAL :- </label>
+                    <input type="datetime-local" name="" id="" required>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label for="">DEPARTURE :- </label>
+                    <input type="datetime-local" name="" id="" required>
+                </div>
+
+                <div>
+                    <label for="">NUMBER OF GUESTS :- </label>
+                    <select name="" id="" required>
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit"> SUBMIT </button>
+                    <button type="reset"> RESET </button>
+                </div>
+
+
+
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="container-1">
+                <div class="col-1">
+                    <img src="logo.png" alt="" width="200px" height="200px">
+                </div>
+    
+                <div class="col-1" style="padding-top: 100px; margin-left: 200px;">
+                    <h2> We Wish You Have Happy Stay. </h2>
+                </div>
+    
+                <!-- <div class="col-1">
+    
+                </div> -->
+    
+                <!--  -->
+            </div>
+            <hr style="margin-left: 100px; margin-right: 100px;">
+                    <h3 style="text-align: center;"> All Rights Reserved 2023 </h3>
+            
+        </div>
+
+</body>
+
+</html>
